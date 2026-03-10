@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    }
+
+    .card {
+      background: white;
+      width: 340px;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card-accent {
+      height: 8px;
+      background: linear-gradient(90deg, #0f3460, #e94560);
+    }
+
+    .card-body {
+      padding: 32px 24px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0f3460;
+      margin-bottom: 16px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 6px;
+    }
+
+    .stream {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e94560;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .bio {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-accent"></div>
+    <div class="card-body">
+      <img
+        class="profile-img"
+        src="https://api.dicebear.com/7.x/thumbs/svg?seed=student"
+        alt="Profile Photo"
+      />
+      <h1 class="name">Alex Johnson</h1>
+      <p class="stream">Computer Science</p>
+      <p class="bio">
+        A passionate learner exploring the world of web development,
+        AI tools, and creative coding. Always curious, always building.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
